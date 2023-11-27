@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bentley Motors</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        header img {
+            max-width: 80px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #66cccc;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .hero {
+            background-image: url('bentley_hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .model img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .model h2 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .option-box {
+            flex: 0 0 48%;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .option-box:hover {
+            transform: scale(1.05);
+        }
+
+        .footer-options {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="bentley_logo.png" alt="Bentley Logo">
+        <h1>Bentley Motors</h1>
+        <nav>
+            <ul>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#word">Word of Bentley</a></li>
+                <li><a href="#config">Configuration</a></li>
+                <li><a href="#dealers">Locate Dealers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <div class="model">
+                <img src="Imagery_Continental GT S_Continental GT S Cambrian Grey - Front 3-4.jpg" alt="Bentley Continental GT S">
+                <h2>CONTINENTAL GT S</h2>
+            </div>
+            <div class="options">
+                <div class="option-box">
+                    <h3>Discover More</h3>
+                </div>
+                <div class="option-box">
+                    <h3>Build your CONTINENTAL GT S</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="options">
+        <h2>Options</h2>
+        <div class="footer-options">
+            <div class="option-box">
+                <h3>Service</h3>
+            </div>
+            <div class="option-box">
+                <h3>Book</h3>
+            </div>
+            <div class="option-box">
+                <h3>World of Bentley</h3>
+            </div>
+            <div class="option-box">
+                <h3>Pre-Order</h3>
+            </div>
+            <div class="option-box">
+                <h3>Ownership</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Bentley Motors. All rights reserved.</p>
+    </footer>
+</body>
+</html>
